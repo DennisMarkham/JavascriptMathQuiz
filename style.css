@@ -1,0 +1,24 @@
+h1
+{
+	text-align: center;
+}
+
+#titleBox
+{
+width: 80%;
+margin: 0 auto;
+border: 5px solid black;
+}
+
+body
+{
+	padding: 100px;
+}
+
+@media screen and (max-width: 1000px)
+{
+	body
+	{
+		padding: 50px;
+	}
+}

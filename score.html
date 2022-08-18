@@ -1,0 +1,19 @@
+<html>
+	<head>
+			<link rel = "stylesheet" href = "style.css" />
+	</head>
+	<body onload ="showResults()">
+		<h2>You got <span id = "results"></span> out of 12 correct.</h2>
+		<a href="index.html">Try again?</a>
+	</body>
+<script>
+	function showResults()
+	{
+	const page1Score = localStorage.getItem("page1C");
+	const page2Score = localStorage.getItem("page2C");
+	const totalScore = parseInt(page1Score) + parseInt(page2Score);
+	document.getElementById("results").innerText = totalScore;
+}
+</script>
+
+</html>
